@@ -1,0 +1,5 @@
+<h3>All My friends</h3>
+
+<% current_user.friends do |friend| %>
+  <%= friend.first_name %>
+<% end %>
