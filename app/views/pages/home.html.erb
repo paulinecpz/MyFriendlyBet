@@ -1,2 +1,6 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Find Friends!</h1>
+<% @users.each do |user| %>
+<%= user.first_name %>
+<%= user.last_name %>
+<% end %>
+
