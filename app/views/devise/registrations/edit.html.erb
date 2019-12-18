@@ -1,4 +1,7 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1436076879760-817e51341b15?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);">
+  <div class="container d-flex">
+    <div class="card">
+      <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
@@ -33,3 +36,6 @@
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+</div>
+</div>
+</div>

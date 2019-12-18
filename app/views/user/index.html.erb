@@ -1,0 +1,23 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1436076879760-817e51341b15?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);">
+  <div class="container d-flex">
+    <div class="card">
+    <h1>Find Friends!</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class="text-center">Name</th>
+          <th scope="col" class="text-center">Add as Friend!</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+        <tr>
+          <td class="text-center"><%= user.first_name.capitalize %><%= user.last_name.capitalize %></td>
+          <td class="text-center"><%= link_to "Add!", user_path %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>

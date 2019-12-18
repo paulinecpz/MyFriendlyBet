@@ -1,4 +1,7 @@
-<h2>Sign up</h2>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1436076879760-817e51341b15?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);">
+  <div class="container d-flex">
+    <div class="card">
+      <h2>Sign up</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
@@ -23,3 +26,6 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
+</div>
+</div>
